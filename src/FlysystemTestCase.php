@@ -163,8 +163,10 @@ abstract class FlysystemTestCase extends TestCase
     }
     public function testNullPrefix()
     {
+        $currentPrefix=$this->disk->getAdapter()->getPathPrefix();
         $this->disk->getAdapter()->setPathPrefix('');
         $this->assertEquals('', $this->disk->getAdapter()->getPathPrefix());
+        $this->disk->getAdapter()->setPathPrefix($currentPrefix);
     }
     public function testRename()
     {
