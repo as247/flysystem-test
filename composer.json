@@ -1,0 +1,25 @@
+{
+  "name": "as247/flysystem-test",
+  "description": "Test package for flysystem v1",
+  "keywords": ["php", "flysystem", "test", "v1"],
+  "homepage": "https://github.com/as247",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "As247",
+      "email": "as247@vui360.com",
+      "homepage": "http://as247.vui360.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "As247\\Flysystem\\Test\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
